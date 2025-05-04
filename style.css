@@ -659,3 +659,43 @@
       height: 200px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed; /* Change from absolute to fixed */
+        right: 0;
+        top: 0; /* Change from 100% to 0 */
+        background-color: var(--white-color);
+        height: 100vh; /* Full viewport height */
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center;
+        transform: translateX(100%); /* Hidden to the right by default */
+        transition: transform 0.5s ease-in-out;
+        z-index: 99;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Add shadow when open */
+    }
+
+    .nav-active {
+        transform: translateX(0%); /* Slide in */
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0; /* Increase spacing */
+    }
+    
+    /* Make sure the header has proper positioning */
+    header {
+        position: fixed; /* Change from sticky to fixed */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    
+    main {
+        padding-top: 60px; /* Account for fixed header */
+    }
+}
