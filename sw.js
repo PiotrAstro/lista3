@@ -1,9 +1,9 @@
 const cacheName = 'piac-pwa-v1';
 const filesToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/js/main.js'
+  '',
+  'index.html',
+  'style.css',
+  'js/main.js'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -29,7 +29,7 @@ self.addEventListener('fetch', (event) => {
       // Fallback dla braku połączenia
       console.log('Brak połączenia, zwracam index.html');
       // if (event.request.mode === 'navigate') {
-        return caches.match('/index.html');
+        return caches.match('index.html');
       // }
     })
   );
