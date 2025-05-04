@@ -29,7 +29,7 @@ self.addEventListener('fetch', (event) => {
       // Fallback dla braku połączenia
       console.log('Brak połączenia, zwracam index.html');
       // if (event.request.mode === 'navigate') {
-        return caches.match('index.html');
+        // return caches.match('index.html');
       // }
     })
   );
