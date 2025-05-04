@@ -1,4 +1,4 @@
-const cacheName = 'piac-pwa-v1';
+const cacheName = 'piac-pwa-v2';
 const filesToCache = [
   '/lista3/',
   '/lista3/index.html',
