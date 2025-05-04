@@ -1,0 +1,66 @@
+<section class="page-section" data-page="about">
+    <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/camino-1.jpg') no-repeat center/cover;">
+      <h1 class="title">O nas</h1>
+      <p class="subtitle">Pasjonaci podróży rowerowych</p>
+    </div>
+    
+    <div class="container">
+      <article>
+        <h2>Nasza historia</h2>
+        <p>TravelPWA to projekt stworzony przez grupę pasjonatów podróży rowerowych, którzy postanowili dzielić się swoimi doświadczeniami i inspirować innych do odkrywania świata na dwóch kółkach.</p>
+        
+        <p>Wierzymy, że podróżowanie rowerem to wyjątkowy sposób poznawania świata - pozwala na bliski kontakt z naturą i lokalną kulturą, jednocześnie promując zrównoważony i odpowiedzialny sposób turystyki.</p>
+
+        <div class="photo-gallery">
+          <div class="gallery-item">
+            <img src="/images/camino-1.jpg" alt="Camino de Santiago">
+            <p class="caption">Camino de Santiago, Hiszpania</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/colombia-1.jpg" alt="Kolumbia">
+            <p class="caption">Kolumbia</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/camino-2.jpg" alt="Camino de Santiago">
+            <p class="caption">Camino de Santiago, Hiszpania</p>
+          </div>
+        </div>
+
+        <h2>Kontakt</h2>
+        <p>Masz pytania lub chciałbyś podzielić się swoimi doświadczeniami? Skontaktuj się z nami!</p>
+        
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn">Wyślij wiadomość</button>
+        </form>
+      </article>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      console.log('Wysłano wiadomość:', { name, email, message });
+      alert('Dziękujemy za wiadomość! Odpowiemy najszybciej jak to możliwe.');
+      this.reset();
+    });
+  </script>

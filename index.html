@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPWA - Podróże rowerem</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/pwa-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TravelPWA">
+  <meta name="apple-mobile-web-app-status-bar" content="#4CAF50">
+  <meta name="theme-color" content="#4CAF50">
+  
+  <!-- Apple Splash Screen images -->
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 1112px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-1668x2388.png" media="(min-device-width: 834px) and (max-device-width: 1194px)">
+  <link rel="apple-touch-startup-image" href="images/splashscreens/splash-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1366px)">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">TravelPWA</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active" data-page="home">Strona główna</a></li>
+        <li><a href="#" data-page="camino">Camino na rowerze</a></li>
+        <li><a href="#" data-page="colombia">Kolumbia</a></li>
+        <li><a href="#" data-page="about">O nas</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main id="content">
+      <section class="hero">
+        <h1 class="title">Podróże Piotra Zatwarinckiego</h1>
+        <p class="subtitle">Fotorelacje z podróży rowerowych</p>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <h2>Camino na rowerze</h2>
+          <p>Odkryj magię Camino de Santiago na rowerze. Przemierzaj malownicze szlaki, poznaj historię i kulturę Hiszpanii.</p>
+          <button class="btn" data-page="camino">Dowiedz się więcej</button>
+        </div>
+        <div class="feature-card">
+          <h2>Podróż po Kolumbii</h2>
+          <p>Odkryj ukryte skarby Kolumbii, od tętniących życiem miast po dzikie, nieodkryte zakątki.</p>
+          <button class="btn" data-page="colombia">Dowiedz się więcej</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Piotr Zatwarincki</p>
+    </div>
+  </footer>
+
+  <div id="offline-message" class="hidden">
+    Jesteś w trybie offline. Niektóre funkcje mogą być niedostępne.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
