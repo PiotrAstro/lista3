@@ -129,16 +129,16 @@ window.onload = () => {
         location.reload();
         return;
       case 'camino':
-        contentUrl = 'pages/camino.html';
+        contentUrl = '/lista3/pages/camino.html';
         break;
       case 'colombia':
-        contentUrl = 'pages/colombia.html';
+        contentUrl = '/lista3/pages/colombia.html';
         break;
       case 'about':
-        contentUrl = 'pages/about.html';
+        contentUrl = '/lista3/pages/about.html';
         break;
       default:
-        contentUrl = 'index.html';
+        contentUrl = '/lista3/index.html';
     }
     console.log('Ładowanie strony:', contentUrl);
     fetch(contentUrl)
