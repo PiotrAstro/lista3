@@ -1,21 +1,12 @@
 // Funkcja uruchamiająca się po załadowaniu strony
 
-window.onload = () => {
-  'use strict';
-  if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('../sw.js')
-  .then(() => console.log('Service Worker registered successfully.'))
-  .catch((error) => console.error('Service Worker registration failed:', error));
-  }
- };
-
  
 window.onload = () => {
     'use strict';
     
     // Rejestracja Service Worker
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js')
+      navigator.serviceWorker.register('sw.js')
       .then(() => console.log('Service Worker registered successfully.'))
       .catch((error) => console.error('Service Worker registration failed:', error));
         
